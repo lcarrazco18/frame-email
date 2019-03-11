@@ -7,7 +7,7 @@ percentage: 70
 <container>
   <row class="collapse header">
     <columns small="12" large="12">
-      <h1 class="text-center">{{ subject }}</h1>
+      <h1 class="text-center">{{ laborDay.title }}</h1>
     </columns>
   </row>
   <row class="collapse menu">
@@ -25,27 +25,31 @@ percentage: 70
   <row>
     <columns small="12" large="12">Home</columns>
   </row>
+  {{#each laborDay.products}}
   <row class="collapse">
     <columns small="6" large="6" valign="middle">
-      <h2 class="text-center">Goku The Super Saiyan</h2>
+      <h2 class="text-center">{{this.title}}</h2>
     </columns>
     <columns small="6" large="6">
-      <center><img src="http://vignette2.wikia.nocookie.net/dragonball/images/5/5b/Gokusteppingoutofaspaceship.jpg/revision/latest?cb=20150325220848">
+      <center>
+        <a href="{{this.product_url}}"><img src={{this.image_url}}" /></a>
       </center>
     </columns>
   </row>
-  <spacer size="100"></spacer>
-  <row>
-    <columns small="6" large="12" class="small-offset-6">
-      <h4>shop for {{ percentage }}% off</h4>
-      <spacer size="40"></spacer>
-      {{#markdown }}
-      # title
-      lorem impusm chilling 
-      
-      ### another title
-      lorem ipsum
-      {{/markdown}}
-    </columns>
-  </row>
+  {{/each}}
+
+  <spacer size="
+            100"></spacer>
+          <row>
+            <columns small="6" large="12" class="small-offset-6">
+              <h4>shop for {{ percentage }}% off</h4>
+              <spacer size="40"></spacer>
+              {{#bold}}
+              My Bold Text
+              {{/bold}}
+              {{#mainButton}}
+              Visit our home page
+              {{/mainButton}}
+            </columns>
+          </row>
 </container>

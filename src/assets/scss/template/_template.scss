@@ -1,6 +1,27 @@
+html, body, .body {
+  background: #e4e5ea;
+  background-color: #e4e5ea;
+}
+
 .header {
-  background: red;
-  background-color: red;
+  background: #ff690f;
+  background-color: #ff690f;
+
+  .columns {
+    padding-bottom: 20px;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    padding-top: 20px;
+
+    h1 {
+      color: white;
+    }
+  }
+}
+
+.sub-header {
+  background: #d65600;
+  background-color: #d65600;
 
   .columns {
     padding-bottom: 20px;

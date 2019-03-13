@@ -13,8 +13,11 @@ html, body, .body {
     padding-left: 20px !important;
     padding-top: 20px;
 
-    h1 {
-      color: white;
+    .logo_white {
+      width: 128px;
+    }
+    .user_icon {
+      width: 32px;
     }
   }
 }
@@ -28,8 +31,7 @@ html, body, .body {
     padding-right: 20px !important;
     padding-left: 20px !important;
     padding-top: 20px;
-
-    h1 {
+    a {
       color: white;
     }
   }
@@ -44,7 +46,7 @@ html, body, .body {
     background-color: black;
   }
 
-  .columns {}
+  // .columns {}
 
   a {
     color: red;

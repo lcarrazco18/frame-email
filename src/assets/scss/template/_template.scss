@@ -47,9 +47,11 @@ body,
         vertical-align: bottom;
       }
     }
+
     th {
       text-align: center;
     }
+
     .menu-divider {
       display: block;
       height: 20px;
@@ -58,6 +60,46 @@ body,
       background-color: #ff690f;
     }
   }
+}
+
+.deal_of_day {
+  background: #13191F;
+  background-color: #13191F;
+
+  .columns {
+    th {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  img {
+    padding-bottom: 20px;
+  }
+
+  h2 {
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  p {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  span {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
 }
 
 .footer {

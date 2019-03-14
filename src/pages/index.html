@@ -4,42 +4,67 @@ subject: Great Deals Today
 ---
 
 <container>
-    <row class="header">
-        <columns valign="middle">
-            <img src="{{ root }}/assets/img/kayakfiles/logo_white.png" class="logo_white" />
+  <row class="header">
+    <columns small="6" large="6" valign="middle">
+      <img
+        src="{{ root }}/assets/img/kayakfiles/logo_white.png"
+        class="logo_white"
+      />
+    </columns>
+    <columns small="6" large="6" valign="middle">
+      <img
+        src="{{ root }}/assets/img/kayakfiles/user.png"
+        class="user_icon float-right"
+      />
+    </columns>
+  </row>
+  <row class="sub-header">
+    <columns></columns>
+    <columns style="width: 90%">
+      <row>
+        <columns large="3" small="4">
+          <a href="#" class="text-center"
+            ><img
+              src="{{ root }}/assets/img/kayakfiles/airplane.png"
+              class="icons"
+            />Flights</a
+          >
         </columns>
-        <columns valign="middle">
-            <img src="{{ root }}/assets/img/kayakfiles/user.png" class="user_icon float-right" />
+        <columns class="show-for-large" style="width: 1%">
+          <span class="menu-divider"></span>
         </columns>
-    </row>
-    <row class="sub-header">
-        <columns></columns>
-        <columns style="width: 90%">
-            <row>
-                <columns>
-                    <a href="#" class="text-center"><img src="{{ root }}/assets/img/kayakfiles/airplane.png" class="icons float-left" />Flights</a>
-                </columns>
-                <columns style="width: 2%">
-                    <span class="menu-divider"></span>
-                </columns>
-                <columns>
-                    <a href="#" class="text-center"><img src="{{ root }}/assets/img/kayakfiles/bed.png" class="icons float-left" />Hotels</a>
-                </columns>
-                <columns style="width: 2%">
-                    <span class="menu-divider"></span>
-                </columns>
-                <columns>
-                    <a href="#" class="text-center"><img src="{{ root }}/assets/img/kayakfiles/car.png" class="icons float-left" />Cars</a>
-                </columns>
-                <columns style="width: 2%">
-                    <span class="menu-divider"></span>
-                </columns>
-                <columns>
-                    <a href="#" class="text-center"><img src="{{ root }}/assets/img/kayakfiles/umbrella.png" class="icons float-left" />Packages</a>
-                </columns>
-
-            </row>
+        <columns large="3" small="4">
+          <a href="#" class="text-center"
+            ><img
+              src="{{ root }}/assets/img/kayakfiles/bed.png"
+              class="icons"
+            />Hotels</a
+          >
         </columns>
-        <columns></columns>
-    </row>
+        <columns class="show-for-large" style="width: 1%">
+          <span class="menu-divider"></span>
+        </columns>
+        <columns large="3" small="4">
+          <a href="#" class="text-center"
+            ><img
+              src="{{ root }}/assets/img/kayakfiles/car.png"
+              class="icons"
+            />Cars</a
+          >
+        </columns>
+        <columns class="show-for-large" style="width: 1%">
+          <span class="menu-divider"></span>
+        </columns>
+        <columns large="3" small="4" class="show-for-large">
+          <a href="#" class="text-center"
+            ><img
+              src="{{ root }}/assets/img/kayakfiles/umbrella.png"
+              class="icons"
+            />Packages</a
+          >
+        </columns>
+      </row>
+    </columns>
+    <columns></columns>
+  </row>
 </container>

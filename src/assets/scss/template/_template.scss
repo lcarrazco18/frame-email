@@ -271,7 +271,7 @@ body,
 
   .circle-logo {
     display: block;
-    margin: 0 auto;  
+    margin: 0 auto;
   }
 
   .call-to-action {
@@ -292,18 +292,44 @@ body,
   .store-logos {
     img {
       height: 40px;
+      width: 120px;
       display: block;
       margin: 0 auto;
     }
 
-    .columns th {
-    }
-    & > table > tbody > tr > th > table > tbody > tr > th {
+    .columns th {}
+
+    &>table>tbody>tr>th>table>tbody>tr>th {
       padding-bottom: 5px;
     }
   }
 }
 
 .footer-social {
-  
+  background: #14181c;
+  background-color: #14181c;
+
+  &>tbody>tr>th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  th {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .logo-section {
+    img {
+      width: 128px;
+    }
+  }
+
+  .social-icons {
+    img {
+      width: 32px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }

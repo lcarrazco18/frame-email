@@ -277,16 +277,22 @@ body,
   .call-to-action {
     display: block;
     font-size: 14px;
+    hyphens: none;
+    color: white;
+    padding-left: 10px;
   }
 
   .info {
     display: block;
     font-size: 12px;
+    color: white;
+    hyphens: none;
+    padding-left: 10px;
   }
 
   .info-section>table>tbody>tr>th {
-    padding-left: 10px;
-    color: white;
+    padding-left: 10px !important;
+    color: while !important;
   }
 
   .store-logos {
@@ -295,9 +301,11 @@ body,
       width: 120px;
       display: block;
       margin: 0 auto;
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
 
-    .columns th {}
+    // .columns th {}
 
     &>table>tbody>tr>th>table>tbody>tr>th {
       padding-bottom: 5px;

@@ -37,7 +37,7 @@ body,
     padding-top: 5px;
 
     a {
-      color: white;
+      color: #ffffff;
       font-size: 14px;
       font-weight: 700;
 
@@ -79,14 +79,14 @@ body,
   }
 
   h2 {
-    color: white;
+    color: #ffffff;
     font-weight: 900;
     font-size: 30px;
     text-align: center;
   }
 
   p {
-    color: white;
+    color: #ffffff;
     font-weight: 600;
     font-size: 16px;
     text-align: center;
@@ -94,7 +94,7 @@ body,
   }
 
   span {
-    color: white;
+    color: #ffffff;
     font-weight: 600;
     font-size: 16px;
     text-align: center;
@@ -125,7 +125,7 @@ body,
     padding-bottom: 7px;
     border: 1px solid #fff;
     border-radius: 5px;
-    color: white;
+    color: #ffffff;
 
     &:hover {
       color: $primary-color;
@@ -183,7 +183,7 @@ body,
     }
 
     span {
-      color: white;
+      color: #ffffff;
       font-weight: 600;
       font-size: 16px;
       text-align: center;
@@ -219,7 +219,7 @@ body,
       padding-bottom: 7px;
       border: 1px solid #13191f;
       border-radius: 5px;
-      color: white;
+      color: #ffffff;
       margin: 0 auto;
 
       &:hover {
@@ -282,14 +282,14 @@ body,
     display: block;
     font-size: 14px;
     hyphens: none;
-    color: white;
+    color: #ffffff;
     padding-left: 10px;
   }
 
   .info {
     display: block;
     font-size: 12px;
-    color: white;
+    color: #ffffff;
     hyphens: none;
     padding-left: 10px;
   }
@@ -357,7 +357,7 @@ body,
     padding-top: 5px;
 
     a {
-      color: white;
+      color: #ffffff;
       font-size: 14px;
       font-weight: 700;
 
@@ -394,23 +394,51 @@ body,
     padding-top: 30px !important;
   }
 
-  .lower-links{
-    &>tbody>tr>th>table>tbody>tr>th{
+  .lower-links {
+    &>tbody>tr>th>table>tbody>tr>th {
       text-align: center;
 
-      a{
-        font-size: 14px;
-        color: white;
-        &:hover{
+      a {
+        font-size: 12px;
+        color: #ffffff;
+        margin-right: 10px;
+
+        &:nth-child(4) {
+          margin-right: 0;
+        }
+
+        &:hover {
           color: $primary-color;
         }
       }
     }
   }
+
   .privacy {
+    th {
+      padding-bottom: 0;
+    }
+
+    &>tbody>tr>th>table>tbody>tr>th {
+      padding-bottom: 30px;
+    }
+
     p {
       color: #a0a1a3;
       font-size: 10px;
+
+    }
+  }
+
+  .copyright,
+  .address {
+    .columns {
+      &>table>tbody>tr>th {
+        color: #d0d0d1;
+        font-size: 13px;
+        font-weight: 400;
+        padding-bottom: 0px;
+      }
     }
   }
 }

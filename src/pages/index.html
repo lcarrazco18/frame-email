@@ -7,14 +7,13 @@ subject: Great Deals Today
     <row class="deal_of_day">
         <columns>
             <h2>Deal Of The Day</h2>
-            <img src="{{root}}/assets/img/kayakfiles/ireland.png">
-            <p>Ireland: 8 days with air, hotel and car rental. Use promo code CFDL110 to save. Price reflects NYC
-                departure, other cities available.</p>
-            <span class="save-amount">Save $110 with code</span>
-            <span class="tiny_info">Gate 1 Travel</span>
-            <span class="price">$649+</span>
+            <img src="{{kayakemail.dealOfTheDay.image}}">
+            <p>{{kayakemail.dealOfTheDay.location}}: {{kayakemail.dealOfTheDay.description}}</p>
+            <span class="save-amount">{{kayakemail.dealOfTheDay.saveAmount}}</span>
+            <span class="tiny_info">{{kayakemail.dealOfTheDay.tinyInfo}}</span>
+            <span class="price">${{kayakemail.dealOfTheDay.price}}+</span>
             <center>
-                <a href="#" class="button">See Deal</a>
+                <a href="{{kayakemail.dealOfTheDay.link}}" class="button">See Deal</a>
             </center>
         </columns>
     </row>
@@ -22,17 +21,18 @@ subject: Great Deals Today
 <container>
     <row class="content-area">
         <columns class="first-offer">
+            {{#each kayakemail.Offers}}
             <row class="offer">
                 <columns>
-                    <img src="{{root}}/assets/img/kayakfiles/cancun.png">
-                    <p>Cancun: 4 nights with air and Melody Maker Cancun stay. Price reflects MIA departure, other
-                        cities available.</p>
-                    <span class="save-amount">Save up to 65%</span>
-                    <span class="tiny_info">CheapCaribbean.com</span>
-                    <span class="price">$689+</span>                    
-                        <a href="#" class="button">See Deal</a>                    
+                    <img src="{{this.image}}">
+                    <p>{{this.location}}: {{this.description}}</p>
+                    <span class="save-amount">{{this.saveAmount}}</span>
+                    <span class="tiny_info">{{this.tinyInfo}}</span>
+                    <span class="price">${{this.price}}+</span>
+                    <a href="{{this.link}}" class="button">See Deal</a>
                 </columns>
             </row>
+            {{/each}}
         </columns>
     </row>
 </container>

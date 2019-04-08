@@ -7,7 +7,7 @@
         "tinyInfo": "Gate 1 Travel",
         "price": "649",
         "link": "#",
-        "image": "//i.imgur.com/2lVrVpg.png"
+        "image": "https://i.imgur.com/2lVrVpg.png"
     },
     "Offers": [{
             "location": "Cancun",
@@ -16,7 +16,7 @@
             "tinyInfo": "CheapCaribbean.com",
             "price": "689",
             "link": "#",
-            "image": "//i.imgur.com/m2WMwSq.png"
+            "image": "https://i.imgur.com/m2WMwSq.png"
         },
         {
             "location": "China",
@@ -25,7 +25,7 @@
             "tinyInfo": "ChinaAir.com",
             "price": "950",
             "link": "#",
-            "image": "//i.imgur.com/sAWKf1v.jpg"
+            "image": "https://i.imgur.com/sAWKf1v.jpg"
         },
         {
             "location": "London",
@@ -34,7 +34,7 @@
             "tinyInfo": "CheapCaribbean.com",
             "price": "1200",
             "link": "#",
-            "image": "//i.imgur.com/m5JyVDO.png"
+            "image": "https://i.imgur.com/m5JyVDO.png"
         }
     ]
 }
